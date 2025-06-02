@@ -6,6 +6,8 @@
     <meta name="description" content="Learn front-end development at Gage Code Academy. HTML, CSS, JavaScript, React, Git & more. No experience required.">
     <title>Gage Code Academy</title>
 <link rel="stylesheet" href="gage.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 <link rel="icon" type="image/png" href="images/favicon.png"/>
 <script src="https://kit.fontawesome.com/04dac9f927.js" crossorigin="anonymous"></script>
 
@@ -16,8 +18,8 @@
     <source src="videos/video.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-
     <header><h1>GAGECODE<br>ACADEMY</h1></header>
+
 <nav class="navbar">
     <ul>
 <li><a href="nav.html">Home</a></li>
@@ -41,24 +43,25 @@
 <button id="b1"> Join</button>
 
 </section>
-<div class="authentication">
+<section class="authentication">
     <p>Login into your Account</p>
 
     <form action="index.php" method="POST" enctype="multipart/form-data">
 
-<label for="username">Username:</label>
-<input type="text" id="username" minlength="6"  placeholder="Enter username"><br>
+<label for="usernameInput">Username:</label>
+<input type="text" name="username"  id="usernameInput" required minlength="6"  placeholder="Enter username"><br>
 
-<label for="password">Password:</label>
-<input type="password" id="password" name="password" placeholder="Enter password"><br>
-
-<label for="email">Email:</label>
-<input type="email" id="email" placeholder="Enter email"><br>
-
-<a href="" id="rest"><h4>Forgotten Password</h4></a>
-
-<button class="b2" type="submit">Login</button>
-<button class="b2" type="submit">Register</button>
+<label for="passwordInput">Password:</label>
+<div class="password-wrapper">
+<input type="password" id="passwordInput" name="password" placeholder="Enter password"><br>
+<i id="togglePassword" class="fa-solid fa-eye"></i>
+</div>
+<label for="emailInput">Email:</label>
+<input type="email" id="emailInput" name="email" placeholder="Enter email"><br>
+<a href="" id="rest">Forgotten Password</a>
+<p id="resultElement"></p>
+<button class="b2" type="submit" id="loginBtn">Login</button>
+<button class="b2" type="submit" id="registerBtn">Register</button>
 
  <div class="icon">
 <a href="https://google.com"><i class="fa-brands fa-google fa-2x"></i></a>
@@ -67,14 +70,14 @@
     </div>
  </form>
 
-    </div>
-    
+</section>
 </main>
      <footer>
         FOOTER
      </footer>
-
         </div>
+        <script src="gage.js"></script>
+
 
 </body>
 </html>
