@@ -35,5 +35,5 @@ This upgraded version of the Gage Code Academy landing page enhances the origina
 ## 👤 Developer
 
 **Tshepang Oliver**  
-Front-End Developer | HTML, CSS & JavaScript  
-[GitHub Profile] | [LinkedIn Profile]
+Software Developer 
+
